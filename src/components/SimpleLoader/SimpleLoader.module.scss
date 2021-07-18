@@ -15,24 +15,22 @@
   border-radius: 50%;
   border: 3px dashed #000;
 
-  &.entering {
-    animation: show-loader 2s forwards;
+}
 
-  }
+.circle-show {
+  animation: show-loader 2s forwards;
+}
 
-  &.entered {
-    animation: rotate-loader 2s infinite;
+.circle-rotate {
+  animation: rotate-loader .2s infinite;
+}
 
-  }
+.circle-hide {
+  animation: show-loader 2s reverse;
+}
 
-  &.exiting {
-    animation: show-loader 2s reverse;
+.circle-exit-active {
 
-  }
-
-  &.exited {
-
-  }
 }
 
 

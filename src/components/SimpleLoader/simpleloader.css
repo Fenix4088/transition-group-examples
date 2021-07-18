@@ -17,19 +17,56 @@
     /*animation: show-loader 2s forwards;*/
 }
 
-.circle.entering {
+/*For Transition*/
+/*.circle.entering {*/
+/*    animation: show-loader 2s forwards;*/
+/*}*/
+
+/*.circle.entered {*/
+/*    animation: rotate-loader .2s infinite;*/
+/*}*/
+
+/*.circle.exiting {*/
+/*    animation: show-loader 2s reverse;*/
+/*}*/
+
+/*.circle.exited {*/
+
+/*}*/
+
+
+/*! If have just one classNames={'circle'} CSSTransition */
+/*.circle-enter-active {*/
+/*    animation: show-loader 2s forwards;*/
+/*}*/
+/*.circle-enter-done {*/
+/*    animation: rotate-loader .2s infinite;*/
+/*}*/
+/*.circle-exit-active {*/
+/*    animation: show-loader 2s reverse;*/
+/*}*/
+/*.circle-exit-active {*/
+
+/*}*/
+
+/*! If have just one classNames={{
+                    enterActive: 'circle-show',
+                    enterDone: 'circle-rotate',
+                    exitActive: 'circle-hide',
+                }} CSSTransition */
+.circle-show {
     animation: show-loader 2s forwards;
 }
 
-.circle.entered {
+.circle-rotate {
     animation: rotate-loader .2s infinite;
 }
 
-.circle.exiting {
+.circle-hide {
     animation: show-loader 2s reverse;
 }
 
-.circle.exited {
+.circle-exit-active {
 
 }
 
