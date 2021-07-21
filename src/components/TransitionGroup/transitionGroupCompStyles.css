@@ -1,0 +1,46 @@
+.wrapper {
+    padding: 30px 0 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    border: 2px solid black;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.todo-exit-active {
+    animation: fade-out 500ms forwards;
+}
+.todo-enter-active {
+    animation: fade-in 500ms forwards;
+}
+
+
+@keyframes  fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes  fade-out {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+}
